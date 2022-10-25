@@ -1,20 +1,61 @@
 <<!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+	#one{
+		width: 1000;
+		height: 100;
+	}
+	#two{
+		width: 1000;
+		height: 100;
+	}
+	#three{
+		width: 1000;
+		height: 100;
+	}	
+	.HG{
+		width:75px;
+		height:75px;
+/*		background-color: blue;
+*/		background-image:url(logo.png) ;
 
-<p>**I KNOW IT LOOKS BORING RIGHT NOW, IT'LL BE STYLED, I PROMISE!**</p>
+	background-size: contain;
+	background-repeat:  no-repeat;
+	position: relative; right: -12px; top: -90px;
+	}
 
-<p>1:</p>
-<p>I've always wondered how websites were made, and learning HTML really helps answer my question! I've learned the difference of something being stored locally and online, and how the website is pushed to the web through GitHub. It was also really interesting to learn how the backend of my computer works throug Terminal. I'm enjoying CS1 a lot, and I can't wait for my website to become a reality!</p>
+	.bar{
+		width:100%;
+		height: 100px;
+		background-color: white;
+		opacity: 0.6;
+}
+body{
+	background-image: url(back.jpg);
+	background-size: cover;
+	margin: 0px;
+}
 
-<p>2:</p>
-<p>I started making my website, and I've changed the homepage a couple of times already. First, my plan was to have it mainly baseball related and have a picture of Citi Field in the background, with some baseballs on top as links to my Journal & Projects pages. I changed it to a blue/green background with a white menu bar with pill shaped buttons as links. I added my logo which I made in New Media 1, and I think it really gives my website some real character. I like the theme that my website has now, and I'm excited to see it come to life even more!</p>
+</style>
 
-<p>3:</p>
-<p>I decided to make my CSS animation a color change for my "Welcome to my website" messages on the homescreen. I enojyed making it, and I feel a lot more comfortable coding now! I think it looks really cool how it changes colors, and how they all do it at different intervals, making a flashing and staggered effect. It kinda looks like lights. I also decided to keep the font the same throughout the home page, and probably throughout the website as well. I really enjoyed making this!</p>
 
 </head>
 <body>
+<div id="one">
+	I've always wondered how websites were made, and learning HTML really helps answer my question! I've learned the difference of something being stored locally and online, and how the website is pushed to the web through GitHub. It was also really interesting to learn how the backend of my computer works throug Terminal. I'm enjoying CS1 a lot, and I can't wait for my website to become a reality!
+</div>
+<div id="two">
+	I changed my website from a baseball oriented site with Citi Field as the background to more of a generic site, but I like my new one more. It has a blue/green background, with a white menu bar with the 'Projects' and 'Journal' tabs on it. I actually think my website looks pretty professional. I'm excited to grow my website even more and make it look even better!
+</div>
+<div id="three">
+	I decided to make my CSS animation a color change for my "Welcome to my website" messages on the homescreen. I enojyed making it, and I feel a lot more comfortable coding now! I think it looks really cool how it changes colors, and how they all do it at different intervals, making a flashing and staggered effect. It kinda looks like lights. I also decided to keep the font the same throughout the home page, and probably throughout the website as well. I really enjoyed making this!
+</div>
+<div id="menu" class="bar"></div>
 
+<a href='index.html'>
+	<div id="logo" class="HG"></div>
+
+</a>
 </body>
 </html>
