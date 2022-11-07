@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<title>Move the Ball</title>
+  
+  <link rel="icon" type="image/x-icon" href="logo.png">
+
 	<style type="text/css">
+
+.HG{
+	width: 75px;
+	height: 75px;
+	background-image:url(logo.png);
+
+background-size: contain;
+background-repeat:  no-repeat;
+position: relative; left: 1360px; top: 575px;
+}
+
 #ball{
 	height: 100px;
 	width: 100px;
@@ -30,7 +46,10 @@ ball.style.left = event.clientX - 50 + "px"
 ball.style.top = event.clientY - 50 + "px"
 })
 
+alert("Click around the screen to move the baseball!");
 
 </script>
+<a href='index.html'>
+	<div id="logo" class="HG"></div>
 </body>
 </html>
