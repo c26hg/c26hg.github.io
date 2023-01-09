@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+#draw{
+	position:absolute; top: 100px; left: 655px;
+
+}
+
+	</style>
+
+</head>
+<body>
+	<center>
+What should you have for lunch? Click.
+<center>
+	<div id="square"></div>
+
+</center>
+<script type="text/javascript">
+	var breakfast = ["Burger", "Chicken", "Steak", "BLT", "Club Sandwich", "French Fries", "French Toast"]
+
+	
+
+	document.addEventListener("click", function(){
+		square.innerText = breakfast
+		var random = Math.round(Math.random()*6)
+	console.log(random)
+	square.innerText = breakfast[random]
+	})
+
+	var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
+
+</script>
+<center>
+	<div id="draw">
+		
+	</div>
+</body>
+</html>

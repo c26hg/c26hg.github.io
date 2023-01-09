@@ -1,39 +1,45 @@
- <!DOCTYPE html>
- <html>
- <head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+<style type="text/css">
 
-	<title></title>
+#clown{
+	width:400px;
+	height:400px;
+	background-image: url(clown.jpg);
+	background-size: cover;
+	margin: 0px;
+}
+</style>
+</head>
+<body>
 
-	<style type="text/css">
-		
-		#box{
-			height: 100px;
-			width: 100px;
-			background-color: blue;
-			position: absolute;
-			left: 100px;
-			top: 200px
+	<audio id="music1" src="music1.mp3"></audio>
 
-		}
+	<script type="text/javascript">
+			let counter = 0;
+		document.addEventListener("click", 
+
+			function(){
+				counter = counter + 1;
+				console.log(counter)
+
+				if (counter%2 == 1){
+					document.body.style.backgroundColor = "blue";
+					music1.play()
+					}
+
+				if (counter%2 == 0){
+					document.body.style.backgroundColor = "red";
+					music1.pause()
+				}
+			}
+			)
 
 
-
-
-	</style>
-
- </head>
- <body>
-
- 	<div id="box">
- 	
-
- 	</div>
- 
- 	<script type="text/javascript">
- 		document.addEventListener(
- 			"click", function(event){
- 				box.style.left = event.clientX - 50 + "px", box.style.top = event.clientY - 50 + "px"})
-
- 	</script>
- </body>
- </html>
+	</script>
+<div id="clown"></div>
+</body>
+</html>
