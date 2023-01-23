@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flashcards</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+#box1{
+	display:inline-block;
+	width: 200px;
+	height: 200px;
+	background-color: #329ea8;
+
+	font-family: 'Roboto', sans-serif;
+}
+#box2{
+	width: 200px;
+	height:200px;
+		background-color: #324ea8;
+	position: absolute; top: -400;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+</style>
+</head>
+<body>
+
+<div id="box1"></div>
+<div id="box2"></div>
+
+<script type="text/javascript">
+	var number = Math.round(Math.random());
+
+	var english = ["Fever", "Muscle"]
+
+	var spanish = ["La fiebre", "El musculo"]
+
+document.addEventListener("click", spanish(){
+	var number = Math.round(Math.random());
+
+	box1.innerText =english[number]
+
+	function wait(){
+		box2.innerText =spanish[number]
+	}
+	setTimeout(wait, 3000)
+}
+
+
+
+</script>
+
+
+</body>
+</html>
