@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+body {
+	background-image: url(https://www.mackinac.org/media/images/2019/sizes/1600x840/asphalt-bitumen-empty-road-1197095.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+		#buggy{
+			width:100px;
+			height:100px;
+			background-image:url("car1.png");
+			left:10px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:absolute; 
+			margin:auto;
+			transition: 0.1s;
+		}
+	</style>
+</head>
+<body>
+	<div id="buggy"></div>
+	<audio id="blinker" src="blinker.mp3"></audio>
+	<audio id="vroom" src="vroom.mp3"></audio>
+	<audio id="horn" src="horn.mp3"></audio>
+
+	<script type="text/javascript">
+		buggy.style.left = "0px";
+		 var x = parseInt(buggy.style.left);
+		 var y = 200
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+		if (event.code === "ArrowLeft"){
+			x = x-20;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car3.png')"
+			blinker.play()
+  		} 
+  		else if (event.code === "ArrowRight"){
+ 		 	x = x+20;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car4.png')"
+			blinker.play()
+		  }
+		else if (event.code === "ArrowUp"){
+			y = y-20
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car2.png')"
+			vroom.play()
+			blinker.pause()
+  		} 
+  		else if (event.code === "ArrowDown"){
+ 		 	y = y+20
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car1.png')"
+			vroom.play()
+			blinker.pause()
+		  }
+		 else if (event.code === "Space"){
+		 	horn.play()
+		 }
+		})
+
+	</script>
+
+</body>
+</html>
