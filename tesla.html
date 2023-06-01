@@ -6,14 +6,14 @@
 	<style>
 
 body {
-	background-image: url(https://www.mackinac.org/media/images/2019/sizes/1600x840/asphalt-bitumen-empty-road-1197095.jpg);
+	background-image: url(trees.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 		#buggy{
 			width:100px;
 			height:100px;
-			background-image:url("car1.png");
+			background-image:url("teslafront.png");
 			left:10px;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
 	<div id="buggy"></div>
 
 	<audio id="blinker" src="blinker.mp3"></audio>
-	<audio id="vroom" src="vroom.mp3"></audio>
+	<audio id="vroom" src="electric.mp3"></audio>
 	<audio id="horn" src="horn.mp3"></audio>
 
 	<script type="text/javascript">
@@ -40,20 +40,20 @@ body {
 		if (event.code === "ArrowLeft"){
 			x = x-20;
 			buggy.style.left = x +"px";
-			buggy.style.backgroundImage = "url('car3.png')"
+			buggy.style.backgroundImage = "url('teslaleft.png')"
 			blinker.play()
   		} 
   		else if (event.code === "ArrowRight"){
  		 	x = x+20;
 			buggy.style.left = x +"px";
-			buggy.style.backgroundImage = "url('car4.png')"
+			buggy.style.backgroundImage = "url('teslaright.png')"
 			blinker.play()
 		  }
 		else if (event.code === "ArrowUp"){
 			y = y-20
 			buggy.style.width = y + "px"
 			buggy.style.height = y + "px"
-			buggy.style.backgroundImage = "url('car2.png')"
+			buggy.style.backgroundImage = "url('teslaback.png')"
 			vroom.play()
 			blinker.pause()
   		} 
@@ -61,7 +61,7 @@ body {
  		 	y = y+20
 			buggy.style.width = y + "px"
 			buggy.style.height = y + "px"
-			buggy.style.backgroundImage = "url('car1.png')"
+			buggy.style.backgroundImage = "url('teslafront.png')"
 			vroom.play()
 			blinker.pause()
 		  }

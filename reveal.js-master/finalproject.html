@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Final Project</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>My Final Project</h1>
+				</section>
+				<section>
+					<h2>Cars</h2>
+					<iframe src=https://c26hg.github.io/car.html></iframe>
+				</section>
+				<section>
+					<br>
+					<br>
+					<br>
+					<h3 style="background-image: url(https://www.jantecneon.com/mm5/graphics/00000001/AM-30-09.png); background-repeat: no-repeat; position: absolute; background-size: contain; left: 150px; color: transparent; height: 700px; width: 700px;">TEST</h3>
+				</section>
+				<section>
+					<h3>
+						<a href="'c26hg.github.io/carrental.html'">
+							<h3>c26hg.github.io/carrental.html</h3>
+						</a>
+					</h3>
+				</section>
+				<section>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+
+		buggy.style.left = "0px";
+		 var x = parseInt(buggy.style.left);
+		 var y = 200
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+		if (event.code === "ArrowLeft"){
+			x = x-20;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car3.png')"
+			blinker.play()
+  		} 
+  		else if (event.code === "ArrowRight"){
+ 		 	x = x+20;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car4.png')"
+			blinker.play()
+		  }
+		else if (event.code === "ArrowUp"){
+			y = y-20
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car2.png')"
+			vroom.play()
+			blinker.pause()
+  		} 
+  		else if (event.code === "ArrowDown"){
+ 		 	y = y+20
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car1.png')"
+			start.play()
+			vroom.play()
+			blinker.pause()
+		  }
+		 else if (event.code === "Space"){
+		 	horn.play()
+		 }
+		})
+
+					</code></pre>
+				</section>
+				<section>
+					<h1>Thanks for watching!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
